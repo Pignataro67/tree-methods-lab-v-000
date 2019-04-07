@@ -1,11 +1,11 @@
 
-function ordered(currentNode){
+function inOrder(currentNode){
   if(currentNode.left){
-    ordered(currentNode.left)
+    inOrder(currentNode.left)
   }
   console.log(currentNode.data)
   if(currentNode.right){
-    ordered(currentNode.right)
+    inOrder(currentNode.right)
   }
 }
 
