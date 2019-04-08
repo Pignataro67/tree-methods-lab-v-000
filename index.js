@@ -8,33 +8,33 @@ function inOrder(currentNode){
   }
 }
 
-// function findOrAdd(rootNode, newNode) {
-//   if (newNode.data < rootNode.data) {
-//     if (rootNode.left) {
-//       findOrAdd(rootNode.left, newNode)
-//     } else {
-//       rootNode.left = newNode
-//     }
-//   } else if (newNode.data > rootNode.data) {
-//     if (rootNode.right) {
-//       findOrAdd(rootNode.right, newNode)
-//     } else {
-//       rootNode.right = newNode
-//     } 
-//   }
-//   return true
-// }
+function findOrAdd(rootNode, newNode) {
+  if (newNode.data < rootNode.data) {
+    if (rootNode.left) {
+      findOrAdd(rootNode.left, newNode)
+    } else {
+      rootNode.left = newNode
+    }
+  } else if (newNode.data > rootNode.data) {
+    if (rootNode.right) {
+      findOrAdd(rootNode.right, newNode)
+    } else {
+      rootNode.right = newNode
+    } 
+  }
+  return true
+}
 
-// function max(node) {
-//   if (node.right) {
-//     return max(node.right)
-//   }
-//   return node
-// }
+function max(node) {
+  if (node.right) {
+    return max(node.right)
+  }
+  return node
+}
 
-// function min(node) {
-//   if (node.left) {
-//     return min(node.left)
-//   }
-//   return node
-// }
+function min(node) {
+  if (node.left) {
+    return min(node.left)
+  }
+  return node
+}
