@@ -34,7 +34,8 @@ function max(node) {
 
 function min(node) {
   if (node.left !== null) {
-    return min(node.left)
-  }
+    return min(node.left);
+  } else {
   return node
+  }
 }
