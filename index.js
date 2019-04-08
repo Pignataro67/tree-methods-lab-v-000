@@ -33,7 +33,7 @@ function max(node) {
 }
 
 function min(node) {
-  if (node.left) {
+  if (node.left !== null) {
     return min(node.left)
   }
   return node
